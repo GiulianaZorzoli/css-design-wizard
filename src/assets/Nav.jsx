@@ -11,7 +11,8 @@ export const Nav = () => {
             <Link to={'/'}><div><h5>HOME</h5></div></Link>
             <Link to={'/shadows'}><div><h5>SOMBRAS</h5></div></Link>
             <Link to={'/gradients'}><div><h5>GRADIENTES</h5></div></Link>
-            <div><h5>PALETAS</h5></div>
+            <Link to={'/palettes'}><div><h5>PALETAS</h5></div></Link>
+            <Link to={'/popular-gradient'}><div><h5>GRADIENTES POPULARES</h5></div></Link>
         </div>
     </nav>
   )

@@ -34,18 +34,18 @@ body{
   flex-direction: column;
 }
 
-
+nav,.logoContainerNav, nav .navItems,.introduction, .cssBox div,.homeSection,.shadow,.gradient,.shadowContainer,.gradientContainer,.shadowControls,.gradientControls{
+  display: flex;
+}
 
 /*NAV*/
 
 nav{
   background-color: var(--nav);
   width: 100%;
-  display: flex;
   justify-content: space-between;
 }
 .logoContainerNav{
-  display: flex;
   justify-content: center;
   align-items: center;
   margin-left: 1rem;
@@ -56,7 +56,6 @@ nav div img{
 }
 
 nav .navItems{
-  display: flex;
   padding: .8rem;
 }
 nav .navItems div{
@@ -79,11 +78,11 @@ nav .navItems a{
   text-decoration: none;
 }
 
+
 /*HOME*/
 
 .introduction{
   margin: 3rem 0;
-  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -92,20 +91,50 @@ nav .navItems a{
   width: 500px;
 }
 .home div p{
-  width: 80%;
+  width: 80%; 
+}
+
+
+.homeSection{
+  margin: 150px 0;
+  padding: 2rem;
+  box-shadow:0px 0px 24px 4px rgba(6,6,76,0.48);
+}
+.homeSectionItem{
+  margin: 0 30px ;
+  width: 70%;
+}
+.homeSectionItem h3,.homeSectionItem p{
+  margin-bottom: 1rem;
+}
+.homeSectionItem p{
+  color: rgba(255, 255, 255, 0.74);
+}
+
+.homeSectionItem button{
+  border: solid 4px var(--color4);
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 40px;
+  background-color: transparent;
+  box-shadow:10px 10px 39px -1px rgba(8,18,58,0.12);
+  cursor: pointer;
+}
+
+.homeSectionItem button:hover{
+  background-color: var(--color3);
+  transition: all 1s;
 }
 
 /*SHADOW*/
 .shadow,.gradient{
   width: 100%;
   flex: 1;
-  display: flex;
 }
 .shadowContainer,.gradientContainer{
   width: 50%;
   height: 100%;
   background-color: var(--color4);
-  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
@@ -126,7 +155,6 @@ nav .navItems a{
 .shadowControls,.gradientControls{
   width: 50%;
   padding: 2rem;
-  display: flex;
   flex-direction: column;
   align-items:left;
   justify-content: space-around;
@@ -186,7 +214,6 @@ nav .navItems a{
 }
 .cssBox div{
   margin-bottom: .2rem;
-  display: flex;
   justify-content: space-between;
 }
 .cssBox div i{

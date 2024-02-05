@@ -8,6 +8,7 @@ import Home from './assets/Home.jsx'
 import Gradient from './assets/Gradient.jsx'
 import Palettes from './assets/Palettes.jsx'
 import TrendGradients from './assets/TrendGradients.jsx'
+import Palette from './assets/Palette.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
     <BrowserRouter>
@@ -18,6 +19,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path='/gradients' element={<Gradient/>}></Route>
         <Route path='/palettes' element={<Palettes/>}></Route>
         <Route path='/popular-gradient' element={<TrendGradients/>}></Route>
+        <Route path='/palette' element={<Palette></Palette>}></Route>
       </Routes>
     </BrowserRouter>
 ,

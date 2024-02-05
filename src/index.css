@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+:root{
+  --color1 : #0197AF;
+  --color2 : #4B227A;
+  --color3: #b362ff;
+  --color4 : #D4E1F5;
+  --cssBox : #1b2248;
+  --nav : #02153D;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body, html{
+  height: 100vh;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+}
+
+body{
+  background: linear-gradient(70deg, var( --color1), var(--color2));
+  background-attachment: fixed;
+}
+ 
+#root{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+/*NAV*/
+
+nav{
+  background-color: var(--nav);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.logoContainerNav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1rem;
+}
+
+nav div img{
+  width: 50px;
+}
+
+nav .navItems{
+  display: flex;
+  padding: .8rem;
+}
+nav .navItems div{
+  margin: 0 .5rem;
+  padding: .5rem 1rem;
+  border: solid 2px white;
+  border-radius: 20px;
+  cursor: pointer;
+  text-align: center;
+  max-height: 60px !important;
+}
+
+nav .navItems div:hover{
+  background-color: var(--color3);
+  transition: all .5s;
+}
+
+nav .navItems a{
+  color: white;
+  text-decoration: none;
+}
+
+/*HOME*/
+
+.introduction{
+  margin: 3rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.home div img{
+  width: 500px;
+}
+.home div p{
+  width: 80%;
+}
+
+/*SHADOW*/
+.shadow,.gradient{
+  width: 100%;
+  flex: 1;
+  display: flex;
+}
+.shadowContainer,.gradientContainer{
+  width: 50%;
+  height: 100%;
+  background-color: var(--color4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.shadowSubBox, .gradientBox{
+  width: 300px;
+  height: 300px;
+  border-radius: 5px;
+}
+.shadowBox{
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 5px;
+  
+}
+
+.shadowControls,.gradientControls{
+  width: 50%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items:left;
+  justify-content: space-around;
+}
+
+.shadowControls div label:not(.colorLabel):not(.innerShadowLabel){
+  display: block;
+}
+.shadowControls div label{
+  margin: 1rem 0 .5rem 0;
+}
+
+.colorLabel,.innerShadowLabel{
+  margin-right: 1rem !important;
+}
+
+.shadowControls div input:not(.colorSelector):not(.innerShadow){
+  display: block;
+  width: 80%;
+}
+.shadowControls div input{
+  margin-bottom: 1rem;
+}
+
+/*GRADIENTES*/
+
+.gradientBox{
+  width: 500px;
+  height: 500px;
+  border-radius: 10px;
+}
+.gradientControls div input:not(#radial){
+  display: block;
+  margin-bottom: 1rem;
+  margin-top: .5rem;
+}
+#radial{
+  margin-left: 1rem;
+}
+.gradientControls div .rangeInput{
+  width: 80%;
+}
+.gradientControls div label{
+  margin-top: 1rem;
+}
+
+/*CSS BOX*/
+
+.cssBox{
+  width: 100%;
+  height: 100px;
+  background-color: var(--cssBox);
+  border: solid 3px white;
+  border-radius: 10px;
+  padding: 1rem;
+  font-family: 'Roboto Mono', monospace;
+}
+.cssBox div{
+  margin-bottom: .2rem;
+  display: flex;
+  justify-content: space-between;
+}
+.cssBox div i{
+  cursor: pointer;
+}
+
